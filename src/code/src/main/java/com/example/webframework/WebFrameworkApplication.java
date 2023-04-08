@@ -55,4 +55,9 @@ public class WebFrameworkApplication {
 
         return new ResponseEntity<>(fcHeaders, HttpStatus.OK);
     }
+
+    @GetMapping("/jzh")
+    public ResponseEntity<String> jzhTest() {
+        return new ResponseEntity<>("金正辉123", HttpStatus.OK);
+    }
 }
